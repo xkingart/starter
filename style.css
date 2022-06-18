@@ -1,0 +1,21 @@
+.nav-item {
+    position: relative;
+}
+.nav-item:hover .texthoverinfo {
+
+display:block;
+
+
+}
+.nav-item .texthoverinfo {
+    border-radius: 10%;
+    border-style:solid;
+    position: absolute;
+    display:none;
+    color:black;
+    background-color: cornflowerblue;
+    z-index: 99;
+}
+
+
+
