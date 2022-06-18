@@ -12,7 +12,9 @@ function Deposit(){
     const currentUserIndex = ctx.users.findIndex((user) => user.email === selectedAccountEmail)
     console.log(currentUserIndex, amount, selectedAccountEmail)
     if (currentUserIndex >= 0 && amount > 0) {
-      ctx.users[currentUserIndex].balance += ctx.users[currentUserIndex].balance + amount
+      console.log('Current balance:' + ctx.users[currentUserIndex].balance)
+      ctx.users[currentUserIndex].balance += ctx.users[currentUserIndex].balance + amount;
+      console.log('New balance:' + ctx.users[currentUserIndex].balance)
     }
     // console.log(name,email,password);
     // if(!validate(name, 'name')) return;
