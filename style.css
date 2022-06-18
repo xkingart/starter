@@ -1,6 +1,9 @@
 .nav-item {
     position: relative;
 }
+.nav-item.selected {
+    background-color: rgb(154, 194, 240);
+}
 .nav-item:hover .texthoverinfo {
 
 display:block;
@@ -8,12 +11,13 @@ display:block;
 
 }
 .nav-item .texthoverinfo {
-    border-radius: 10%;
     border-style:solid;
     position: absolute;
     display:none;
     color:black;
-    background-color: cornflowerblue;
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgb(240, 243, 224);
     z-index: 99;
 }
 

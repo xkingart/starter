@@ -1,12 +1,14 @@
 
 
 function Spa() {
-  const ctx = React.useContext(UserContext);  
+  const ctx = React.useContext(UserContext);
+  const [users,setUsers] = React.useState([{name:'Xavier King',email:'xking@canisbite.com',password:'secret',balance:100}]);
+
   return (
     <HashRouter>
       <h1 className={"h-100 d-flex align-items-center justify-content-center"}>Welcome to Bad Bank</h1>
       <Navbar/>
-      <UserContext.Provider value={{users:[{name:'Xavier King',email:'xking@canisbite.com',password:'secret',balance:100}]}}>              
+      <UserContext.Provider value={{ users, setUsers }}>              
         <Route path="/" exact         component={Home} />
         <Route path="/CreateAccount/" component={CreateAccount} />
         <Route path="/login/"         component={Login} />

@@ -13,7 +13,7 @@ function Card(props){
 
     return(
         <div className={"h-100 d-flex align-items-center justify-content-center"} >
-        <div className={classes()} style={{maxWidth: "18rem", backgroundColor: 'cornflowerblue'}}>
+        <div className={classes()} style={{/*maxWidth: "18rem",*/ backgroundColor: 'cornflowerblue'}}>
             <div className="card-header">{props.header}</div>
             <div className="card-body">
                 {props.title && (<h5 className="card-title">{props.title}</h5>)}
