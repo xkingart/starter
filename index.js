@@ -11,13 +11,13 @@ function Spa() {
       <UserContext.Provider value={{ users, setUsers }}>              
         <Route path="/" exact         component={Home} />
         <Route path="/CreateAccount/" component={CreateAccount} />
-        <Route path="/login/"         component={Login} />
+        {/* <Route path="/login/"         component={Login} /> */}
         <Route path="/deposit/"       component={Deposit} />
         <Route path="/withdraw/"      component={Withdraw} />
         <Route path="/balance/"       component={Balance} />
         <Route path="/alldata/"       component={AllData} />
-        <Route path="/products/"      component={Products} />
-        <Route path="/about/"         component={About} />
+        {/* <Route path="/products/"      component={Products} /> */}
+        {/* <Route path="/about/"         component={About} /> */}
       </UserContext.Provider>      
     </HashRouter>
   );

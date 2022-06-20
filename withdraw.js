@@ -72,12 +72,14 @@ function Withdraw(){
           <button
           disabled={!amount || !selectedAccountEmail}
            type="submit" className="btn btn-light" onClick={handleRemoveBalance}>Withdraw</button>
+           <Balance/>
           </>
   ): (
       <>
       <h5>Success</h5>
       <p>The withdraw has been applied</p>
       <button onClick={handleReset} className="btn btn-light">Add withdraw</button>
+      <Balance/>
       </>
   )}
     />

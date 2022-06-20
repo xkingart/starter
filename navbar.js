@@ -29,11 +29,11 @@ function Navbar() {
             <div className="texthoverinfo">Create an Account</div>
             </li>
 
-            <li className={navItemClass('/Login/')}>
+            {/* <li className={navItemClass('/Login/')}>
             <Link className="nav-link" to="/Login/" 
             >Login</Link>
             <div className="texthoverinfo">Login Page</div>
-            </li>
+            </li> */}
 
             <li className={navItemClass('/deposit/')}>
             <Link className="nav-link" to="/deposit/"
@@ -47,11 +47,11 @@ function Navbar() {
             <div className="texthoverinfo">Withdraw Money</div>
             </li>
 
-            <li className={navItemClass('/balance/')}>
+            {/* <li className={navItemClass('/balance/')}>
             <Link className="nav-link" to="/balance/"
             >Balance</Link>
             <div className="texthoverinfo">Check Your Balance</div>
-            </li>
+            </li> */}
 
             <li className={navItemClass('/alldata/')}>
             <Link className="nav-link" to="/alldata/"
@@ -59,17 +59,17 @@ function Navbar() {
             <div className="texthoverinfo">All Data Info</div>
             </li>
 
-            <li className={navItemClass('/products/')}>
+            {/* <li className={navItemClass('/products/')}>
             <Link className="nav-link" to="/products/"
             >Products</Link>
             <div className="texthoverinfo">Product Info</div>
-            </li>
+            </li> */}
 
-            <li className={navItemClass('/about/')}>
+            {/* <li className={navItemClass('/about/')}>
             <Link className="nav-link" to="/about/"
             >About</Link>
             <div className="texthoverinfo">About Page</div>
-            </li>
+            </li> */}
         </ul>
         </div>
     );

@@ -1,10 +1,27 @@
 function Balance(){
   const ctx = React.useContext(UserContext);  
   return (
-    <>
-    <h1>Balance</h1>
-    <br/>
-    {JSON.stringify(ctx)}
-    </>
+    <Card
+    
+    body={
+      <>
+        <table class="table">
+          <thead>
+            <tr>
+              
+              <th scope="col">Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {ctx.users.map((user, index) => (
+              <tr>
+              <td>{user.balance}</td>
+            </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    }
+    />
   )
 }

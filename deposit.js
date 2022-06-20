@@ -71,12 +71,14 @@ function Deposit(){
           <button
           disabled={!amount || !selectedAccountEmail}
            type="submit" className="btn btn-light" onClick={handleAddBalance}>Submit Deposit</button>
+           <Balance/>
           </>
   ): (
       <>
       <h5>Success</h5>
       <p>The deposit has been received</p>
       <button onClick={handleReset} className="btn btn-light">Add deposit</button>
+      <Balance/>
       </>
   )}
     />
